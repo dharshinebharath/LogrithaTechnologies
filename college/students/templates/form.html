@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <a href="{% url 'home' %}">HOME PAGE</a><br>
+    <a href="{% url 'students' %}">STUDENTS PAGE</a><br>
+    <a href="{% url 'registration' %}">REGISTRATION PAGE</a><br>
+    <form action="{% url 'add_user' %}">
+        {% csrf_token %}
+        <label for="" >Name</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="" >Email</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="" >Department</label><br>
+        <input type="text" id="department" name="department"><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+    
+    
+</body>
+</html>

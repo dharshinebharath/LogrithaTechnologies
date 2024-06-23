@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+</head>
+<body>
+    <h1>Form Data</h1>
+    <a href="{% url 'home' %}">HOME PAGE</a><br>
+    <a href="{% url 'students' %}">STUDENTS PAGE</a><br>
+    <a href="{% url 'registration' %}">REGISTRATION PAGE</a><br>
+    {{error_message}} <br>
+    {{name}} <br>
+    {{email}} <br>
+    {{department}} <br>
+    {{message}} <br>
+    
+</body>
+</html>
